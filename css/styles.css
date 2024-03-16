@@ -64,8 +64,9 @@ img {
 
 .header-nav {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   align-items: center;
+  margin-right: auto;
 }
 
 .logo {
@@ -107,6 +108,15 @@ img {
   color: #404bbf;
 }
 
+.header-nav-item::after {
+  content: "";
+  border-radius: 2px;
+  display: inline-block;
+  width: 48px;
+  background-color: #2e2f42;
+  height: 4px;
+}
+
 .header-address-list {
   font-size: 16px;
   line-height: 1.5;
@@ -129,15 +139,15 @@ img {
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
-  display: flex;
-  /* flex-direction: column;
-  align-items: center; */
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
 }
 
-.hero-wrap {
-  /* padding-top: 188px;
-  padding-bottom: 188px; */
-}
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -145,6 +155,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin: 0 auto;
   max-width: 496px;
   margin-bottom: 48px;
 }
@@ -185,6 +196,19 @@ img {
   gap: 24px;
   /* justify-content: center; */
   /* padding: 0 15px; */
+}
+
+.skills-list-box {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  /* width: 264px; */
+  /* height: 112px; */
+  margin-bottom: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .skills-list-item {
@@ -252,7 +276,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -261,6 +284,39 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.list-icon-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.list-icon-box {
+  width: 40px;
+  height: 40px;
+  background: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.list-icon-box:hover,
+.list-icon-box:focus {
+  background: #404bbf;
+}
+
+.icon-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.team-list-icon {
 }
 
 /* Portfolio */
@@ -320,6 +376,14 @@ img {
   padding-bottom: 100px;
 }
 
+.footer-wrap {
+  display: flex;
+}
+
+.footer-wrap-first {
+  margin-right: 120px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -335,4 +399,25 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.footer-icon-box {
+  width: 40px;
+  height: 40px;
+  background: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.footer-icon-box:hover,
+.footer-icon-box:focus {
+  background: #31d0aa;
 }
