@@ -103,6 +103,8 @@ img {
 .header-nav-item {
   /* padding-bottom: 20px; */
   overflow: hidden;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-item:hover {
@@ -114,6 +116,8 @@ img {
   padding: 28px 0;
   position: relative;
   /* text-align: center; */
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
@@ -144,6 +148,8 @@ img {
 
 .address-link {
   color: #434455;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -206,6 +212,8 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   display: block;
   margin: 0 auto;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -331,6 +339,8 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-icon-box:hover,
@@ -403,6 +413,8 @@ img {
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-title {
@@ -472,6 +484,8 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-box:hover,
