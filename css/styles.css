@@ -61,8 +61,10 @@ img {
 
 /* header */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e7e9fc;
   width: 100%;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -83,7 +85,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
+  /* margin-right: 76px; */
+  margin-right: 120px;
 }
 
 .header-logo {
@@ -99,7 +102,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: flex;
+  /* display: flex; */
+  display: none;
   gap: 40px;
 }
 
@@ -136,12 +140,20 @@ img {
   position: relative;
 }
 
+.header-address {
+  display: none;
+}
+
 .header-address-list {
-  font-size: 16px;
+  /* font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; */
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .address-link {
@@ -152,6 +164,131 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
+}
+
+.menu-open-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  padding: 24px 24px 40px 16px;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mob-close-btn {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+  margin-bottom: 24px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-close-btn:hover,
+.mob-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
+}
+
+/* .mob-menu-wrap {
+  display: flex;
+} */
+
+.mob-menu-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mob-menu-item {
+  margin-bottom: 40px;
+}
+
+.mob-menu-link {
+  color: currentColor;
+}
+
+.current-menu {
+  color: #404bbf;
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  color: #404bbf;
+}
+
+.mob-address-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-bottom: 48px;
+}
+
+.mob-address-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-address-link {
+  color: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-address-link:hover,
+.mob-address-link:focus {
+  color: #404bbf;
+}
+
+.mob-icon-list {
+  display: flex;
+  gap: 40px;
+}
+
+.mob-icon-box {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-icon-link:hover,
+.mob-icon-link:focus {
+  background: #404bbf;
+}
+
+.mob-icon-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-list-icon {
+  fill: #f4f4fd;
 }
 
 /* Hero */
@@ -608,7 +745,8 @@ img {
 .modal {
   position: absolute;
   border-radius: 4px;
-  width: 408px;
+  /* width: 408px; */
+  width: 288px;
   min-height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -811,6 +949,17 @@ img {
     max-width: 768px;
   }
 
+  .menu-open-btn {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: flex;
+  }
+  .header-address {
+    display: unset;
+  }
+
   .hero {
     padding: 112px 136px;
     background-image: linear-gradient(
@@ -880,6 +1029,23 @@ img {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header-address-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .logo {
+    margin-right: 76px;
   }
 
   .hero {
