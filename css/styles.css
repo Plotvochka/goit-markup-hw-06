@@ -36,10 +36,7 @@ img {
 }
 
 .container {
-  /* max-width: 1158px; */
   max-width: 320px;
-  /* margin: 0 auto;
-  padding: 0 15px; */
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -61,8 +58,6 @@ img {
 
 /* header */
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #e7e9fc;
@@ -85,8 +80,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  /* margin-right: 76px; */
-  /* margin-right: 120px; */
 }
 
 .header-logo {
@@ -102,7 +95,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* display: flex; */
   display: none;
   gap: 40px;
   margin-left: 120px;
@@ -146,9 +138,6 @@ img {
 }
 
 .header-address-list {
-  /* font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em; */
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
@@ -210,10 +199,6 @@ img {
   border: none;
   fill: #fff;
 }
-
-/* .mob-menu-wrap {
-  display: flex;
-} */
 
 .mob-menu-list {
   font-weight: 700;
@@ -296,8 +281,7 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  /* padding: 188px 0; */
-  padding: 72px 52px;
+  padding: 72px 0;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -325,15 +309,11 @@ img {
 
 .hero-title {
   font-weight: 700;
-  /* font-size: 56px; */
-  /* line-height: 1.07; */
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   margin: 0 auto;
-  /* max-width: 496px; */
   max-width: 216px;
-  /* margin-bottom: 48px; */
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
@@ -415,8 +395,6 @@ img {
 
 .team {
   background-color: #f4f4fd;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -440,14 +418,12 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 72px;
   justify-content: center;
 }
 
 .team-list-item {
   background-color: #fff;
-  /* width: calc((100% - 3 * 24px) / 4); */
   width: 100%;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -513,8 +489,6 @@ img {
 /* Portfolio */
 
 .portfolio {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -538,7 +512,6 @@ img {
 }
 
 .portfolio-list-item {
-  /* width: calc((100% - 24px * 2) / 3); */
   width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -596,14 +569,11 @@ img {
 /* footer */
 .footer {
   background-color: #2e2f42;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .footer-wrap {
-  /* margin-right: 120px; */
   margin-bottom: 72px;
 }
 
@@ -615,7 +585,6 @@ img {
 }
 
 .footer-logo {
-  /* display: inline-block; */
   margin-bottom: 16px;
   display: block;
   text-align: center;
@@ -626,12 +595,10 @@ img {
 }
 
 .footer-article {
-  /* font-weight: 500; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  /* max-width: 264px; */
   max-width: 288px;
 }
 
@@ -669,7 +636,6 @@ img {
 }
 
 .subscribe-wrap {
-  /* margin-left: 80px; */
   margin-top: 72px;
 }
 
@@ -686,7 +652,6 @@ img {
 .footer-form {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 16px;
   justify-content: center;
 }
@@ -764,9 +729,7 @@ img {
 .modal {
   position: absolute;
   border-radius: 4px;
-  /* width: 408px; */
   width: 288px;
-  /* min-height: 584px; */
   min-height: 623px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -984,7 +947,7 @@ img {
   }
 
   .hero {
-    padding: 112px 136px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1111,7 +1074,7 @@ img {
   }
 
   .header-nav-list {
-    margin-right: 76px;
+    margin-left: 76px;
   }
 
   .hero {
@@ -1209,6 +1172,7 @@ img {
 
   .footer-wrap {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .subscribe-wrap {
